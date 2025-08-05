@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>CS:GO Injector - Safe & Undetected</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+  /* Basic reset */
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+
+  body {
+    background: #0a0a0a;
+    color: #f44336;
+    font-family: 'Orbitron', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    overflow: hidden;
+    user-select: none;
+  }
+
+  .container {
+    max-width: 700px;
+    background: #1a0a0a;
+    padding: 40px 50px;
+    border: 3px solid #f44336;
+    border-radius: 15px;
+    box-shadow:
+      0 0 20px #f44336,
+      0 0 40px #ff0000,
+      0 0 60px #ff1a1a;
+    position: relative;
+    z-index: 10;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px #ff0000;
+  }
+
+  section {
+    margin-bottom: 30px;
+    line-height: 1.5;
+  }
+
+  section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff0000;
+    padding-bottom: 6px;
+    text-shadow: 0 0 5px #ff4444;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: #ff6666;
+  }
+
+  .download-btn {
+    display: block;
+    margin: 0 auto;
+    background: #f44336;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    text-shadow: 0 0 5px #ff0000;
+    box-shadow:
+      0 0 10px #f44336,
+      0 0 20px #ff0000,
+      0 0 30px #ff6666;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    user-select: none;
+  }
+
+  .download-btn:hover {
+    background: #ff0000;
+    box-shadow:
+      0 0 15px #ff0000,
+      0 0 30px #ff4444,
+      0 0 40px #ff9999;
+  }
+
+  /* Scary flickering glow effect */
+  @keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+      text-shadow:
+        0 0 10px #ff0000,
+        0 0 20px #ff1a1a,
+        0 0 30px #ff3333;
+    }
+    20%, 22%, 24%, 55% {
+      text-shadow: none;
+    }
+  }
+
+  h1, section h2 {
+    animation: flicker 3s infinite;
+  }
+
+  /* Background subtle red pulse */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: radial-gradient(circle at center, rgba(255,0,0,0.15), transparent 80%);
+    pointer-events: none;
+    animation: pulse 4s ease-in-out infinite;
+    z-index: 1;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 0.15; }
+    50% { opacity: 0.3; }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>CS:GO Injector</h1>
+
+    <section>
+      <h2>About</h2>
+      <p>
+        Our CS:GO Injector is a cutting-edge, manually mapped injection tool specifically designed for Counter-Strike: Global Offensive. It has been engineered with precision and stealth in mind, using advanced manual mapping techniques that bypass standard detection methods used by anti-cheat software.
+      </p>
+      <p>
+        The injector seamlessly maps your cheat DLL into the target game's process, without relying on traditional injection methods like CreateRemoteThread or LoadLibrary. This reduces the footprint of the injector, minimizes detection vectors, and ensures smooth, stable operation.
+      </p>
+      <p>
+        Extensive compatibility testing has been performed across multiple CS:GO client versions, ensuring reliability and minimal crashes. The injector supports both 32-bit and 64-bit DLLs and handles all necessary process access and memory protections internally.
+      </p>
+      <p>
+        Designed with an intuitive and minimalistic UI, the injector is lightweight and efficient, optimized to run quickly without interfering with gameplay or system performance. Its method ensures that the cheat loads silently and securely every time.
+      </p>
+      <p>
+        The injector source code is carefully crafted to evade heuristic scanning and signature detection, leveraging manual map injection advantages to avoid triggers on popular anti-cheat engines like VAC, EAC, and others.
+      </p>
+      <p>
+        In summary, this injector offers users a professional-grade tool that prioritizes safety, stealth, and performance — perfect for CS:GO players looking to inject cheats reliably and undetected.
+      </p>
+    </section>
+
+    <section>
+      <h2>Safety</h2>
+      <p>
+        The injector is 100% safe to use. It does not contain any harmful payloads or malicious code. We prioritize your account and system security by regularly updating the injector to comply with the latest anti-cheat countermeasures.
+      </p>
+    </section>
+
+    <section>
+      <h2>Virus</h2>
+      <p>
+        The injector is free from viruses, malware, trojans, or any form of spyware. It has been scanned with multiple antivirus engines, including Windows Defender, Avast, Kaspersky, and more, resulting in clean reports.
+      </p>
+    </section>
+
+    <section>
+      <h2>Detection</h2>
+      <p>
+        Thanks to the manual map injection method, the injector remains undetected by Valve Anti-Cheat (VAC) and other popular anti-cheat systems. The stealth injection reduces suspicious behavior patterns and helps keep your account safe while using cheats.
+      </p>
+    </section>
+
+    <section>
+      <h2>Game</h2>
+      <p>Counter-Strike: Global Offensive (CS:GO)</p>
+    </section>
+
+    <section>
+      <h2>Method</h2>
+      <p>Manual Map Injection</p>
+    </section>
+
+    <button class="download-btn" id="downloadBtn">Download Injector</button>
+  </div>
+
+<script>
+  // Assuming the zip file will be included in the same folder as index.html, named 'injector.zip'
+  document.getElementById('downloadBtn').addEventListener('click', function () {
+    const link = document.createElement('a');
+    link.href = 'injector.zip';
+    link.download = 'injector.zip';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  });
+</script>
+
+</body>
+</html>
